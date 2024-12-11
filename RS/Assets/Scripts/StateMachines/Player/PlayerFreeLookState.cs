@@ -37,7 +37,7 @@ public class PlayerFreeLookState : PlayerBaseState
             _playerStateMachine.Animator.SetFloat(FreeLookSpeedHash, 0, AnimatorDampTime, deltaTime);
             return;
         }
-        
+         
         float value = Mathf.Abs(_playerStateMachine.InputReader.MovementValue.x) + Mathf.Abs(_playerStateMachine.InputReader.MovementValue.y);
         _playerStateMachine.Animator.SetFloat(FreeLookSpeedHash, value, AnimatorDampTime, deltaTime);
         
